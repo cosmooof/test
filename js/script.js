@@ -28,8 +28,53 @@ squareSumOfSquares(2, 3); // 169
 Функция square() может быть использована внутри sumOfSquares()
 Функция sumOfSquares() может быть использована внутри squareSumOfSquares()*/
 
-const square = (num) => num ** 2;
-const sumOfSquares = (a, b) => square(a) + square(b);
-const squareSumOfSquares = (a, b) => sumOfSquares(a, b) ** 2;
-console.log(squareSumOfSquares(-3, 7));
+// const square = (num) => num ** 2;
+// const sumOfSquares = (a, b) => square(a) + square(b);
+// const squareSumOfSquares = (a, b) => sumOfSquares(a, b) ** 2;
+// console.log(squareSumOfSquares(-3, 7));
+
+// Модули
+
+/*
+import getTriangleArea from './myMathModule.js'; // connect module 1
+
+const getSumArea = (n) => getTriangleArea(n, (square(n) / 2)); // sum
+export default getSumArea; // export default module
+*/
+
+
+
+
+// const mathTriangleArea = (a, b, y) => {
+//     const degToRad = (deg) => deg * Math.PI / 180;
+//     const area = 1 / 2 * a ** 2 * (Math.sin(degToRad(b)) * Math.sin(degToRad(y))) / Math.sin(degToRad(180 - (b + y)));
+//     return area;
+// };
+
+// console.log(mathTriangleArea(3, 60, 60));
+
+// const isEven = num => num % 2 === 0;
+// console.log(isEven(17));
+
+
+
+
+
+const smallestDivisor = (num) => {
+
+    const iter = (num) = {
+        let acc = 2;
+
+        if (num === 1) {
+            return num;
+        } else if ((num / acc) === 1) {
+            return num;
+        }
+    }
+
+    return smallestDivisor(num % 2);
+}
+
+console.log(smallestDivisor(15));
+
 
