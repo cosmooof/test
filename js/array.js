@@ -43,3 +43,17 @@ const get = (arr, index, defaultValue = null) => {
 };
 */
 
+// Цикл for
+/*const names = ['john', 'smith', 'karl'];
+
+const addPrefix = (arr, str) => {
+  const result = [];
+
+  for (let i = 0; i < arr.length; i += 1) {
+    result[i] = `${str} ${arr[i]}`;
+  }
+
+  return result;
+}
+
+console.log(addPrefix(names, 'Mr'));*/
