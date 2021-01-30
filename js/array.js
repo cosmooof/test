@@ -29,3 +29,17 @@ const swap = (items) => {
 
 console.log(swap(['one', 'two', 'three']));
 */
+
+// Проверка существования значения
+/*
+const cities = ['moscow', 'london', 'berlin', 'porto'];
+
+const get = (arr, index, defaultValue = null) => {
+  if (index >= arr.length || index < 0) {
+    return defaultValue;
+  }
+
+  return arr[index];
+};
+*/
+
