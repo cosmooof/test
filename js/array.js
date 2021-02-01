@@ -93,3 +93,24 @@ const calculateSum = (arr) => {
 }
 
 console.log(calculateSum(coll1));*/
+
+// Цикл for...of
+/*
+const temperatures2 = [36, 37.4, 39, 41, 36.6];
+
+const calculateAverage = (arr) => {
+  const itemsCount = arr.length;
+
+  if (itemsCount === 0) {
+    return null;
+  }
+
+  let sum = 0;
+  for (const item of arr) {
+    sum += item;
+  }
+
+  return sum / itemsCount;
+}
+
+console.log(calculateAverage(temperatures2));*/
