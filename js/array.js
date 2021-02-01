@@ -57,3 +57,19 @@ const addPrefix = (arr, str) => {
 }
 
 console.log(addPrefix(names, 'Mr'));*/
+
+// Ссылки
+/*const names = ['john', 'smith', 'karl'];
+
+const reverse = (arr) => {
+  const tempArr = [];
+
+  for (let i = arr.length - 1; i >= 0; i -= 1) {
+    tempArr.push(arr[i]);
+  }
+
+  for (let i = 0; i < tempArr.length; i += 1) {
+    arr.shift(i);
+    arr.push(tempArr[i]);
+  }
+}*/
