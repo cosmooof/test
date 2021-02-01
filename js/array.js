@@ -134,3 +134,18 @@ const getSameParity = (coll) => {
   return result;
 };
 */
+
+// Управляющие инструкции
+/*
+const getTotalAmount = (arr, name) => {
+  let sum = 0;
+
+  for (let item of arr) {
+    if (item.slice(0, 3) === name) {
+      sum += Number(item.slice(3));
+    }
+  }
+
+  return sum;
+}
+*/
