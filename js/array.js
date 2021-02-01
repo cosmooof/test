@@ -114,3 +114,6 @@ const calculateAverage = (arr) => {
 }
 
 console.log(calculateAverage(temperatures2));*/
+
+// Удаление элементов массива
+
