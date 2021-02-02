@@ -167,3 +167,23 @@ const getTotalAmount = (arr, name) => {
 
   return null;
 }*/
+
+// Генерация строки в цикле
+/*const buildDefinitionList = (definitions) => {
+  if (definitions.length === 0) {
+    return '';
+  }
+
+  const parts = [];
+
+  for (const item of definitions) {
+    const name = item[0];
+    const description = item[1];
+    parts.push(`<dt>${name}</dt><dd>${description}</dd>`);
+  }
+
+  const innerValue = parts.join('');
+  const result = `<dl>${innerValue}</dl>`;
+
+  return result;
+}*/
