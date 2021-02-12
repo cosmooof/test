@@ -295,25 +295,38 @@ const getIntersectionOfSortedArrays = (arr1, arr2) => {
 };*/
 // Деструктуризация
 /*const getTheNearestLocation = (locations, currentPoint) => {
-  const result = [];
-
   if (locations.length === 0) {
     return null;
   }
 
-  for (let location of locations) {
-    const [loc, [x1, y1]] = location;
-    const sum = getDistance([x1, y1], currentPoint);
-    result.push(sum);
+  let [nearestLocation] = locations;
+  const [, nearestPoint] = nearestLocation;
+  let lowestDistance = getDistance(currentPoint, nearestPoint);
+
+  for (const location of locations) {
+    const [, point] = location;
+    const distance = getDistance(currentPoint, point);
+    if (distance < lowestDistance) {
+      lowestDistance = distance;
+      nearestLocation = location;
+    }
   }
 
-  if (result[0] < result[1] && result[0] < result[2]) {
-    return locations[0];
+  return nearestLocation;
+};*/
+// Rest-оператор и деструктуризация
+/*
+const getMax = (coll) => {
+  if (coll.length === 0) {
+    return null;
   }
-  if (result[1] < result[0] && result[1] < result[2]) {
-    return locations[1];
+
+  let [max, ...rest] = coll;
+  for (const value of rest) {
+    if (value > max) {
+      max = value;
+    }
   }
-  if (result[2] < result[0] && result[2] < result[1]) {
-    return locations[2];
-  }
-}*/
+
+  return max;
+};*/
