@@ -1,6 +1,4 @@
 // Задачи из JS: Массивы / hexlet
-
-
 // Синтаксис
 /*
 const getWeekends = (str = 'default') => {
@@ -13,7 +11,6 @@ const getWeekends = (str = 'default') => {
 
 console.log(getWeekends());
 */
-
 // Модификация
 /*
 const swap = (items) => {
@@ -30,7 +27,6 @@ const swap = (items) => {
 
 console.log(swap(['one', 'two', 'three']));
 */
-
 // Проверка существования значения
 /*
 const cities = ['moscow', 'london', 'berlin', 'porto'];
@@ -43,7 +39,6 @@ const get = (arr, index, defaultValue = null) => {
   return arr[index];
 };
 */
-
 // Цикл for
 /*const names = ['john', 'smith', 'karl'];
 
@@ -58,7 +53,6 @@ const addPrefix = (arr, str) => {
 }
 
 console.log(addPrefix(names, 'Mr'));*/
-
 // Ссылки
 /*const names = ['john', 'smith', 'karl'];
 
@@ -74,7 +68,6 @@ const reverse = (arr) => {
     arr.push(tempArr[i]);
   }
 }*/
-
 // Агрегация
 /*const coll1 = [2, 0, 17, 3, 9, 15, 4];
 
@@ -94,7 +87,6 @@ const calculateSum = (arr) => {
 }
 
 console.log(calculateSum(coll1));*/
-
 // Цикл for...of
 /*
 const temperatures2 = [36, 37.4, 39, 41, 36.6];
@@ -115,7 +107,6 @@ const calculateAverage = (arr) => {
 }
 
 console.log(calculateAverage(temperatures2));*/
-
 // Удаление элементов массива
 /*
 const getSameParity = (coll) => {
@@ -135,7 +126,6 @@ const getSameParity = (coll) => {
   return result;
 };
 */
-
 // Управляющие инструкции
 /*
 const getTotalAmount = (arr, name) => {
@@ -150,7 +140,6 @@ const getTotalAmount = (arr, name) => {
   return sum;
 }
 */
-
 // Вложенные массивы
 /*const getSuperSeriesWinner = (scores) => {
   let result = 0;
@@ -168,7 +157,6 @@ const getTotalAmount = (arr, name) => {
 
   return null;
 }*/
-
 // Генерация строки в цикле
 /*const buildDefinitionList = (definitions) => {
   if (definitions.length === 0) {
@@ -188,7 +176,6 @@ const getTotalAmount = (arr, name) => {
 
   return result;
 }*/
-
 // Обработка строк через преобразование в массив
 /*const makeCensored = (text, stopWords) => {
   const words = text.split(' ');
@@ -201,7 +188,6 @@ const getTotalAmount = (arr, name) => {
 
   return result.join(' ');
 }*/
-
 // Вложенные циклы
 /*var _ = require('lodash'); // Подключаем библиотеку Lodash
 
@@ -220,7 +206,6 @@ const getSameCount = (coll1, coll2) => {
 
   return count;
 };*/
-
 // Теория Множеств
 /*
 const countUniqChars = (text) => {
@@ -234,7 +219,6 @@ const countUniqChars = (text) => {
 
   return uniqChars.length;
 };*/
-
 // Сортировка массивов
 /*const bubbleSort = (coll) => {
   let stepsCount = coll.length - 1;
@@ -257,3 +241,35 @@ const countUniqChars = (text) => {
 
   return coll;
 }*/
+// Стек
+/*let isBracketStructureBalanced;
+isBracketStructureBalanced = (symbols) => {
+  // проверяем, не является ли строка пустой, если да то возвращаем ошибку
+  if (symbols.length !== 1) {
+    const stack = [];
+
+    for (let symbol of symbols) {
+      // проверяем, является ли текущий символ - открывающим
+      if (openingSymbols.indexOf(symbol) >= 0) {
+        // если он открывающий, то добавляем его в стэк
+        stack.push(symbol);
+
+        // если нет то проверяем, является ли текущий символ - закрывающим
+      } else if (closingSymbols.indexOf(symbol) >= 0) {
+        // если символ закрывающий, проверяем, что стэк не пустой
+        if (!stack.length) {
+          continue;
+        }
+        const lastIndex = stack[stack.length - 1];
+        if (openingSymbols.indexOf(lastIndex) === closingSymbols.indexOf(symbol)) {
+          // если находим, то убираем последний символ
+          stack.pop();
+        } else if (openingSymbols.indexOf(lastIndex) !== closingSymbols.indexOf(symbol)) {
+          return false;
+        }
+      }
+    }
+    return stack.length === 0;
+  }
+  return false;
+};*/
