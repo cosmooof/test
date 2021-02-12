@@ -273,3 +273,23 @@ isBracketStructureBalanced = (symbols) => {
   }
   return false;
 };*/
+// Big O
+/*
+const getIntersectionOfSortedArrays = (arr1, arr2) => {
+  arr1.sort(function compareNumbers(a, b) {
+    return a - b;
+  })
+  arr2.sort(function compareNumbers(a, b) {
+    return a - b;
+  })
+
+  const result = [];
+
+  for (const item of arr1) {
+    if (arr2.includes(item)) {
+      result.push(item);
+    }
+  }
+
+  return result;
+};*/
