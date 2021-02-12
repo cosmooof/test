@@ -293,3 +293,27 @@ const getIntersectionOfSortedArrays = (arr1, arr2) => {
 
   return result;
 };*/
+// Деструктуризация
+/*const getTheNearestLocation = (locations, currentPoint) => {
+  const result = [];
+
+  if (locations.length === 0) {
+    return null;
+  }
+
+  for (let location of locations) {
+    const [loc, [x1, y1]] = location;
+    const sum = getDistance([x1, y1], currentPoint);
+    result.push(sum);
+  }
+
+  if (result[0] < result[1] && result[0] < result[2]) {
+    return locations[0];
+  }
+  if (result[1] < result[0] && result[1] < result[2]) {
+    return locations[1];
+  }
+  if (result[2] < result[0] && result[2] < result[1]) {
+    return locations[2];
+  }
+}*/
