@@ -330,3 +330,18 @@ const getMax = (coll) => {
 
   return max;
 };*/
+// Spread-оператор и создание новых массивов
+/*
+const flatten = (arrays) => {
+  let result = [];
+
+  for (const array of arrays) {
+    if (array.length >= 1 || array.length === 0) {
+      result.push(...array);
+    } else {
+      result.push(array);
+    }
+  }
+
+  return result;
+}*/
