@@ -1,3 +1,4 @@
+import _ from "lodash"
 // Синтаксис
 /*export default () => {
   const obj = {
@@ -39,6 +40,8 @@
 
   return { scheme, name };
 };*/
+
+// Проверка существования свойства
 
 
 
