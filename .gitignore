@@ -1,2 +1,4 @@
 # idea ignore
 .idea
+# node modules
+/node_modules/
