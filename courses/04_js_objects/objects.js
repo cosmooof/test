@@ -53,5 +53,18 @@ var _ = require('lodash');
   return result;
 };*/
 
+// Обход свойств объекта
+/*const pick = (obj, names) => {
+  const result = {};
+  const keys = Object.keys(obj);
+  for (const key of keys) {
+    for (const name of names) {
+      if (name === key) {
+        result[key] = obj[key];
+      }
+    }
+  }
 
+  return result;
+}*/
 
