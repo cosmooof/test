@@ -82,7 +82,7 @@ export default (data, keys) => {
   return current;
 };*/
 // Слияние
-const fill = (object, keys, data) => {
+/*const fill = (object, keys, data) => {
   const filteredData = keys.length > 0 ? _.pick(data, keys) : data;
   Object.assign(object, filteredData);
-}
+}*/
