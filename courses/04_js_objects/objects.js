@@ -80,5 +80,13 @@ export default (data, keys) => {
   }
 
   return current;
-};
-*/
+};*/
+// Слияние
+/*const fill = (object, prop, path) => {
+  if (prop.length === 0) {
+    return Object.assign(object, path);
+  } else {
+    const filter = _.pick(path, prop);
+    return Object.assign(object, filter);
+  }
+}*/
