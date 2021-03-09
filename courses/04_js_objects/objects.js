@@ -86,3 +86,12 @@ export default (data, keys) => {
   const filteredData = keys.length > 0 ? _.pick(data, keys) : data;
   Object.assign(object, filteredData);
 }*/
+// Клонирование (копирование)
+/*
+const deepClone = (data) => {
+  let clone = {};
+  for (let key in data) {
+    clone[key] = _.isObject(data[key]) ? deepClone(data[key]) : data[key];
+  }
+  return clone;
+}*/
