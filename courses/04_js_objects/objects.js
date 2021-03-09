@@ -67,4 +67,18 @@ var _ = require('lodash');
 
   return result;
 }*/
+// Вложенные объекты
+/*
+export default (data, keys) => {
+  let current = data;
+  for (const key of keys) {
+    const hasBarProperty = Object.prototype.hasOwnProperty.call(current, key);
+    if (!hasBarProperty) {
+      return null;
+    }
+    current = current[key];
+  }
 
+  return current;
+};
+*/
