@@ -105,3 +105,15 @@ const make = (name, data = {}) => {
 
   return { ...defaultData, ...data, name };
 };*/
+// Деструктуризация
+/*
+const getSortedNames = (users) => {
+  const names = [];
+
+  for (const { name } of users) {
+    names.push(name);
+  }
+
+  return names.sort();
+}*/
+
