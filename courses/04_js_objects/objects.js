@@ -95,3 +95,13 @@ const deepClone = (data) => {
   }
   return clone;
 }*/
+// spread и создание новых объектов
+/*
+const make = (name, data = {}) => {
+  const defaultData = {
+    state: 'moderating',
+    createdAt: Date.now(),
+  };
+
+  return { ...defaultData, ...data, name };
+};*/
