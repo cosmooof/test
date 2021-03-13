@@ -1,4 +1,6 @@
 var _ = require('lodash');
+var crc32 = require('crc-32');
+
 // Синтаксис
 /*export default () => {
   const obj = {
@@ -116,4 +118,29 @@ const getSortedNames = (users) => {
 
   return names.sort();
 }*/
+// Хеш-таблицы
+/*
+const make = () => {
+  const data = [];
+  return data;
+}
+const map = make();
 
+const hash = (key) => {
+  const hash = crc32.str(key);
+  return Math.abs(hash) % 1000;
+}
+
+const set = (map, key, value) => {
+  if (!map[hash(key)] || map[hash(key)] && map[hash(key)][0] === key) {
+    map[hash(key)] = [key, value];
+    return true;
+  } else {
+    return false;
+  }
+}
+
+const get = (map, key, defaultValue = null) => {
+  const index = hash(key);
+  return map[index] && map[index][0] === key ? map[index][1] : defaultValue;
+}*/

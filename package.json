@@ -2,6 +2,7 @@
   "name": "hexlet-frontend",
   "version": "1.0.0",
   "dependencies": {
+    "crc-32": "^1.2.0",
     "lodash": "^4.17.21"
   }
 }
