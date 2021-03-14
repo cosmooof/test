@@ -30,3 +30,15 @@ const average = (...num) => {
 
   return _.sum(num) / count;
 }*/
+// Оператор Spread (распаковка аргументов)
+/*const convert = (...items) => {
+  const formattedDates = [];
+
+  for (let item of items) {
+    const date = new Date(...item);
+    const formattedDate = date.toDateString();
+    formattedDates.push(formattedDate);
+  }
+
+  return formattedDates;
+}*/
