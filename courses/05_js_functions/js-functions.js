@@ -1,4 +1,4 @@
-var _ = require('lodash');
+var _ = require('lodash'), txtReversed;
 // Чистые функции
 /*
 const isPrime = (num) => {
@@ -42,3 +42,20 @@ const average = (...num) => {
 
   return formattedDates;
 }*/
+// Объекты первого класса
+/*const run = (text) => {
+  const takeLast = (str, length) => {
+    if (str.length === 0 || str.length < length) {
+      return null;
+    }
+
+    const result = [];
+    for (let i = str.length - 1; result.length < length; i -= 1) {
+      result.push(str[i]);
+    }
+
+    return result.join('');
+  };
+
+  return takeLast(text, 4);
+};*/
