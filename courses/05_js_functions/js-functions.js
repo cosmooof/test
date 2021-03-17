@@ -65,3 +65,7 @@ const takeOldest = (data, num = 1) => {
   const sorted = _.sortBy(data, ({ birthday }) => Date.parse(birthday));
   return sorted.slice(0, num);
 }*/
+// Отображение (map)
+/*
+const getChildren = (users) => users.flatMap(({ children }) => children);
+*/
