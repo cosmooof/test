@@ -59,3 +59,9 @@ const average = (...num) => {
 
   return takeLast(text, 4);
 };*/
+// Функции высшего порядка
+/*
+const takeOldest = (data, num = 1) => {
+  const sorted = _.sortBy(data, ({ birthday }) => Date.parse(birthday));
+  return sorted.slice(0, num);
+}*/
