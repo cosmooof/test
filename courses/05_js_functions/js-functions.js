@@ -69,3 +69,9 @@ const takeOldest = (data, num = 1) => {
 /*
 const getChildren = (users) => users.flatMap(({ children }) => children);
 */
+// Фильтрация (filter)
+/*
+const getGirlFriends = (users) => {
+  return users.flatMap(({ friends }) => friends.filter(({ gender }) => gender === 'female'));
+}
+*/
