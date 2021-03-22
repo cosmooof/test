@@ -85,3 +85,14 @@ const getGirlFriends = (users) => {
   return { ...acc, [groupName]: group.concat(object) }; // квадратные скобки нужны, чтобы указать имя группы в качестве ключа
   // старый аккумулятор деструктурируется, для текущей группы записывается новый массив с данными
 }, {});*/
+// Сигналы
+/*const getFreeDomainsCount = (emails) => emails
+    .map((email) => {
+      const [, domain] = email.split('@');
+      return domain;
+    })
+    .filter((domain) => freeEmailDomains.includes(domain))
+    .reduce((acc, domain) => {
+      const count = _.get(acc, domain, 0) + 1;
+      return { ...acc, [domain]: count };
+    }, {});*/
