@@ -96,3 +96,17 @@ const getGirlFriends = (users) => {
       const count = _.get(acc, domain, 0) + 1;
       return { ...acc, [domain]: count };
     }, {});*/
+// Парадигмы программирования
+// Моя версия
+/*const enlargeArrayImage = (arr) => {
+  return arr.reduce((acc, item) => {
+    const dublicateValues = item.flatMap(item => [item, item]);
+    return acc.concat([dublicateValues, dublicateValues])}, []);
+}*/
+// Версия учителя
+/*
+const duplicateValues = (items) => items.flatMap((item) => [item, item]);
+const enlargeArrayImage = (items) => {
+  const horizontallyStretched = items.map(duplicateValues);
+  return duplicateValues(horizontallyStretched);
+};*/
