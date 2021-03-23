@@ -9,3 +9,4 @@ if (get({}, 'kiln', 'air') !== 'air') {
 if (get({ kiln: 'oil'}, 'kiln', 'air') !== 'oil') {
   throw new Error('Функция работает неверно!');
 }*/
+//
