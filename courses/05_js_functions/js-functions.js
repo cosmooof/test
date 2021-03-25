@@ -104,8 +104,7 @@ const getGirlFriends = (users) => {
     return acc.concat([dublicateValues, dublicateValues])}, []);
 }*/
 // Версия учителя
-/*
-const duplicateValues = (items) => items.flatMap((item) => [item, item]);
+/*const duplicateValues = (items) => items.map((item) => [item + item]);
 const enlargeArrayImage = (items) => {
   const horizontallyStretched = items.map(duplicateValues);
   return duplicateValues(horizontallyStretched);
