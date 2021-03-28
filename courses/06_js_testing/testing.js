@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 // Зачем и как писать тесты?
 /*
 if (get({ kiln: 'oil'}, 'kiln') !== 'oil') {
