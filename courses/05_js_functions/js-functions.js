@@ -109,3 +109,26 @@ const enlargeArrayImage = (items) => {
   const horizontallyStretched = items.map(duplicateValues);
   return duplicateValues(horizontallyStretched);
 };*/
+
+const point1 = [0, 0];
+const point2 = [3, 4];
+
+const calculateDistance = (point1, point2) => {
+  return Math.sqrt((Math.pow((point2[0] - point1[0]), 2)) + (Math.pow((point2[1] - point1[1]), 2)));
+}
+
+console.log(calculateDistance(point1, point2));
+
+// class Point {
+//   constructor(x, y) {
+//     this.x = x;
+//     this.y = y;
+//   }
+//
+//   disance(p1, p2) {
+//     return Math.sqrt(((p2.x - p1.x) ** 2) + ((p2.y - p1.y) ** 2));
+//   }
+// }
+// const point = new Point();
+// console.log(point.disance(new Point(0, 7), new Point(0, 24)));
+
