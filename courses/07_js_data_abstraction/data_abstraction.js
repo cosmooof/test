@@ -41,3 +41,29 @@ const getRadius = (point) => point.radius;
 const getX = (point) => Math.round(getRadius(point) * Math.cos(getAngle(point)));
 const getY = (point) => Math.round(getRadius(point) * Math.sin(getAngle(point)));
 */
+// Уровневое проектирование
+/*const makeRectangle = (point, width, height) => {
+  return { point, width, height };
+}
+
+const getStartPoint = (rectangle) => rectangle.point;
+
+const getWidth = (rectangle) => {
+  let { width } = rectangle;
+  return width;
+}
+
+const getHeight = (rectangle) => {
+  let { height } = rectangle;
+  return height;
+}
+
+const containsOrigin = (rectangle) => {
+  const startPoint = getStartPoint(rectangle),
+        endPoint = { x: (getX(startPoint) + getWidth(rectangle)), y: (getY(startPoint) - getHeight(rectangle)) };
+  if (getQuadrant(startPoint) === null) {
+    return false;
+  }
+
+  return getQuadrant(startPoint) === 2 && getQuadrant(endPoint) === 4;
+}*/
