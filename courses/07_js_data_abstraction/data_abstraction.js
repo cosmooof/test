@@ -67,3 +67,61 @@ const containsOrigin = (rectangle) => {
 
   return getQuadrant(startPoint) === 2 && getQuadrant(endPoint) === 4;
 }*/
+// Инварианты
+/*const getGcd = (a, b) => {
+  if (!b) {
+    return a;
+  }
+
+  return getGcd(b, a % b);
+}
+
+const getLcm = (a, b) => Math.abs(a * b) / getGcd(a, b);
+
+const makeRational = (num, den) => {
+  const gcd = getGcd(num, den);
+  const numer = num / gcd;
+  const denom = den / gcd;
+  return { numer, denom };
+};
+
+const getNumer = (rat) => rat.numer;
+const getDenom = (rat) => rat.denom;
+
+const getCommonDenom = (rat1, rat2) => {
+  const lcm = getLcm(getDenom(rat1), getDenom(rat2));
+  const lcmRat1 = lcm / getDenom(rat1);
+  const lcmRat2 = lcm / getDenom(rat2);
+
+  const numerRat1 = getNumer(rat1) * lcmRat1;
+  const denomRat1 = getDenom(rat1) * lcmRat1;
+
+  const numerRat2 = getNumer(rat2) * lcmRat2;
+  const denomRat2 = getDenom(rat2) * lcmRat2;
+
+  return {
+    numerRat1, denomRat1, numerRat2, denomRat2,
+  };
+};
+
+const add = (rat1, rat2) => {
+  const { numerRat1, denomRat1, numerRat2 } = getCommonDenom(rat1, rat2);
+  const numer = numerRat1 + numerRat2;
+  const denom = denomRat1;
+
+  return { numer, denom };
+};
+
+const sub = (rat1, rat2) => {
+  const { numerRat1, denomRat1, numerRat2 } = getCommonDenom(rat1, rat2);
+  const numer = numerRat1 - numerRat2;
+  const denom = denomRat1;
+  if (getGcd(numer, denom) !== 1) {
+    const numer = (numerRat1 - numerRat2) / denomRat1;
+    const denom = denomRat1 / denomRat1;
+    return { numer, denom };
+  }
+  return { numer, denom };
+};
+
+const ratToString = (rat) => `${getNumer(rat)}/${getDenom(rat)}`;*/
