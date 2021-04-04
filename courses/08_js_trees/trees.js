@@ -1,5 +1,7 @@
 // Определения
-/*const removeFirstLevel = (tree) => {
-  const filterLevel = tree.filter((item) => Array.isArray(item));
+/*
+const removeFirstLevel = (tree) => {
+  const filterLevel = tree.filter(Array.isArray);
   return filterLevel.flat();
-};*/
+};
+*/
