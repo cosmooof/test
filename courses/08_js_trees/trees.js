@@ -6,7 +6,7 @@ const removeFirstLevel = (tree) => {
 };
 */
 // Виртуальная файловая система
-/*const generate = () => {
+/* const generate = () => {
   return mkdir('nodejs-package', [
     mkfile('Makefile'),
     mkfile('README.md'),
@@ -23,9 +23,9 @@ const removeFirstLevel = (tree) => {
       ]),
     ], { owner: 'root', hidden: false }),
   ], { hidden: true });
-};*/
+}; */
 // Манипуляции с виртуальной файловой системой
-/*export const compressImages = (node) => {
+/* export const compressImages = (node) => {
   const children = getChildren(node);
   const newChildren = children.map((child) => {
     const name = getName(child);
@@ -39,13 +39,14 @@ const removeFirstLevel = (tree) => {
   });
   const newMeta = _.cloneDeep(getMeta(node));
   return mkdir(getName(node), newChildren, newMeta);
-};*/
+}; */
 
 import {
   mkdir, mkfile, isFile, getName, getMeta, getChildren, isDirectory,
 } from '@hexlet/immutable-fs-trees';
 
 import _ from 'lodash';
+
 const tree = mkdir('/', [
   mkdir('eTc', [
     mkdir('NgiNx', [], { size: 4000 }),
@@ -57,23 +58,22 @@ const tree = mkdir('/', [
 ]);
 
 const downcaseFileNames = (node) => {
-    const children = getChildren(node);
-    const newChildren = children.map((child) => {
-      const name = _.cloneDeep(getName(child));
-      const meta = _.cloneDeep(getMeta(child));
-      if (isFile(child)) {
-        if (name !== name.toLowerCase()) {
-          const newName = name.toLowerCase();
-          return mkfile(newName, meta);
-        }
-        return mkfile(name, meta);
+  const children = getChildren(node);
+  const newChildren = children.map((child) => {
+    const name = _.cloneDeep(getName(child));
+    const meta = _.cloneDeep(getMeta(child));
+    if (isFile(child)) {
+      if (name !== name.toLowerCase()) {
+        const newName = name.toLowerCase();
+        return mkfile(newName, meta);
       }
-      return downcaseFileNames(child);
-    })
-    const newMeta = _.cloneDeep(getMeta(node));
-    return mkdir(getName(node), newChildren, newMeta);
-}
-
+      return mkfile(name, meta);
+    }
+    return downcaseFileNames(child);
+  });
+  const newMeta = _.cloneDeep(getMeta(node));
+  return mkdir(getName(node), newChildren, newMeta);
+};
 const test = downcaseFileNames(tree);
 
 // console.log(test.children)
