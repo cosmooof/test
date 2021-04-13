@@ -40,3 +40,40 @@ const removeFirstLevel = (tree) => {
   const newMeta = _.cloneDeep(getMeta(node));
   return mkdir(getName(node), newChildren, newMeta);
 };*/
+
+import {
+  mkdir, mkfile, isFile, getName, getMeta, getChildren, isDirectory,
+} from '@hexlet/immutable-fs-trees';
+
+import _ from 'lodash';
+const tree = mkdir('/', [
+  mkdir('eTc', [
+    mkdir('NgiNx', [], { size: 4000 }),
+    mkdir('CONSUL', [
+      mkfile('config.JSON', { uid: 0 }),
+    ]),
+  ]),
+  mkfile('hOsts'),
+]);
+
+const downcaseFileNames = (node) => {
+    const children = getChildren(node);
+    const newChildren = children.map((child) => {
+      const name = _.cloneDeep(getName(child));
+      const meta = _.cloneDeep(getMeta(child));
+      if (isFile(child)) {
+        if (name !== name.toLowerCase()) {
+          const newName = name.toLowerCase();
+          return mkfile(newName, meta);
+        }
+        return mkfile(name, meta);
+      }
+      return downcaseFileNames(child);
+    })
+    const newMeta = _.cloneDeep(getMeta(node));
+    return mkdir(getName(node), newChildren, newMeta);
+}
+
+const test = downcaseFileNames(tree);
+
+// console.log(test.children)

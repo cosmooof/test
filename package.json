@@ -7,5 +7,9 @@
     "assert": "^2.0.0",
     "crc-32": "^1.2.0",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1"
   }
 }
