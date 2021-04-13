@@ -1,4 +1,7 @@
-var _ = require('lodash'), txtReversed;
+const _ = require('lodash');
+
+let
+  txtReversed;
 // Чистые функции
 /*
 const isPrime = (num) => {
@@ -18,7 +21,7 @@ const isPrime = (num) => {
 const sayPrimeOrNot = (num) => {
   const text = isPrime(num) ? 'yes' : 'no';
   console.log(text);
-}*/
+} */
 // Оператор Rest (упаковка аргументов)
 /*
 const average = (...num) => {
@@ -29,9 +32,9 @@ const average = (...num) => {
   }
 
   return _.sum(num) / count;
-}*/
+} */
 // Оператор Spread (распаковка аргументов)
-/*const convert = (...items) => {
+/* const convert = (...items) => {
   const formattedDates = [];
 
   for (let item of items) {
@@ -41,9 +44,9 @@ const average = (...num) => {
   }
 
   return formattedDates;
-}*/
+} */
 // Объекты первого класса
-/*const run = (text) => {
+/* const run = (text) => {
   const takeLast = (str, length) => {
     if (str.length === 0 || str.length < length) {
       return null;
@@ -58,13 +61,13 @@ const average = (...num) => {
   };
 
   return takeLast(text, 4);
-};*/
+}; */
 // Функции высшего порядка
 /*
 const takeOldest = (data, num = 1) => {
   const sorted = _.sortBy(data, ({ birthday }) => Date.parse(birthday));
   return sorted.slice(0, num);
-}*/
+} */
 // Отображение (map)
 /*
 const getChildren = (users) => users.flatMap(({ children }) => children);
@@ -76,7 +79,7 @@ const getGirlFriends = (users) => {
 }
 */
 // Агрегация (reduce)
-/*const groupBy = (objects, key) => objects.reduce((acc, object) => {
+/* const groupBy = (objects, key) => objects.reduce((acc, object) => {
   // из каждого объекта берётся значение по ключу
   const groupName = object[key];
   // контейнером группы выступает массив
@@ -84,9 +87,9 @@ const getGirlFriends = (users) => {
   // возвращается новый объект аккумулятора
   return { ...acc, [groupName]: group.concat(object) }; // квадратные скобки нужны, чтобы указать имя группы в качестве ключа
   // старый аккумулятор деструктурируется, для текущей группы записывается новый массив с данными
-}, {});*/
+}, {}); */
 // Сигналы
-/*const getFreeDomainsCount = (emails) => emails
+/* const getFreeDomainsCount = (emails) => emails
     .map((email) => {
       const [, domain] = email.split('@');
       return domain;
@@ -95,27 +98,25 @@ const getGirlFriends = (users) => {
     .reduce((acc, domain) => {
       const count = _.get(acc, domain, 0) + 1;
       return { ...acc, [domain]: count };
-    }, {});*/
+    }, {}); */
 // Парадигмы программирования
 // Моя версия
-/*const enlargeArrayImage = (arr) => {
+/* const enlargeArrayImage = (arr) => {
   return arr.reduce((acc, item) => {
     const dublicateValues = item.flatMap(item => [item, item]);
     return acc.concat([dublicateValues, dublicateValues])}, []);
-}*/
+} */
 // Версия учителя
-/*const duplicateValues = (items) => items.map((item) => [item + item]);
+/* const duplicateValues = (items) => items.map((item) => [item + item]);
 const enlargeArrayImage = (items) => {
   const horizontallyStretched = items.map(duplicateValues);
   return duplicateValues(horizontallyStretched);
-};*/
+}; */
 
 const point1 = [0, 0];
 const point2 = [3, 4];
 
-const calculateDistance = (point1, point2) => {
-  return Math.sqrt((Math.pow((point2[0] - point1[0]), 2)) + (Math.pow((point2[1] - point1[1]), 2)));
-}
+const calculateDistance = (point1, point2) => Math.sqrt((Math.pow((point2[0] - point1[0]), 2)) + (Math.pow((point2[1] - point1[1]), 2)));
 
 console.log(calculateDistance(point1, point2));
 
@@ -131,4 +132,3 @@ console.log(calculateDistance(point1, point2));
 // }
 // const point = new Point();
 // console.log(point.disance(new Point(0, 7), new Point(0, 24)));
-

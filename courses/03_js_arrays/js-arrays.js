@@ -40,7 +40,7 @@ const get = (arr, index, defaultValue = null) => {
 };
 */
 // Цикл for
-/*const names = ['john', 'smith', 'karl'];
+/* const names = ['john', 'smith', 'karl'];
 
 const addPrefix = (arr, str) => {
   const result = [];
@@ -52,9 +52,9 @@ const addPrefix = (arr, str) => {
   return result;
 }
 
-console.log(addPrefix(names, 'Mr'));*/
+console.log(addPrefix(names, 'Mr')); */
 // Ссылки
-/*const names = ['john', 'smith', 'karl'];
+/* const names = ['john', 'smith', 'karl'];
 
 const reverse = (arr) => {
   const tempArr = [];
@@ -67,9 +67,9 @@ const reverse = (arr) => {
     arr.shift(i);
     arr.push(tempArr[i]);
   }
-}*/
+} */
 // Агрегация
-/*const coll1 = [2, 0, 17, 3, 9, 15, 4];
+/* const coll1 = [2, 0, 17, 3, 9, 15, 4];
 
 const calculateSum = (arr) => {
   if (arr.length === 0) {
@@ -86,7 +86,7 @@ const calculateSum = (arr) => {
   return sum;
 }
 
-console.log(calculateSum(coll1));*/
+console.log(calculateSum(coll1)); */
 // Цикл for...of
 /*
 const temperatures2 = [36, 37.4, 39, 41, 36.6];
@@ -106,7 +106,7 @@ const calculateAverage = (arr) => {
   return sum / itemsCount;
 }
 
-console.log(calculateAverage(temperatures2));*/
+console.log(calculateAverage(temperatures2)); */
 // Удаление элементов массива
 /*
 const getSameParity = (coll) => {
@@ -141,7 +141,7 @@ const getTotalAmount = (arr, name) => {
 }
 */
 // Вложенные массивы
-/*const getSuperSeriesWinner = (scores) => {
+/* const getSuperSeriesWinner = (scores) => {
   let result = 0;
   for (const score of scores) {
     result += Math.sin(score[0] - score[1]);
@@ -156,9 +156,9 @@ const getTotalAmount = (arr, name) => {
   }
 
   return null;
-}*/
+} */
 // Генерация строки в цикле
-/*const buildDefinitionList = (definitions) => {
+/* const buildDefinitionList = (definitions) => {
   if (definitions.length === 0) {
     return '';
   }
@@ -175,9 +175,9 @@ const getTotalAmount = (arr, name) => {
   const result = `<dl>${innerValue}</dl>`;
 
   return result;
-}*/
+} */
 // Обработка строк через преобразование в массив
-/*const makeCensored = (text, stopWords) => {
+/* const makeCensored = (text, stopWords) => {
   const words = text.split(' ');
 
   const result = [];
@@ -187,9 +187,9 @@ const getTotalAmount = (arr, name) => {
   }
 
   return result.join(' ');
-}*/
+} */
 // Вложенные циклы
-/*var _ = require('lodash'); // Подключаем библиотеку Lodash
+/* var _ = require('lodash'); // Подключаем библиотеку Lodash
 
 const getSameCount = (coll1, coll2) => {
   let count = 0;
@@ -205,7 +205,7 @@ const getSameCount = (coll1, coll2) => {
   }
 
   return count;
-};*/
+}; */
 // Теория Множеств
 /*
 const countUniqChars = (text) => {
@@ -218,9 +218,9 @@ const countUniqChars = (text) => {
   }
 
   return uniqChars.length;
-};*/
+}; */
 // Сортировка массивов
-/*const bubbleSort = (coll) => {
+/* const bubbleSort = (coll) => {
   let stepsCount = coll.length - 1;
   let swapped;
 
@@ -240,9 +240,9 @@ const countUniqChars = (text) => {
   } while (swapped);
 
   return coll;
-}*/
+} */
 // Стек
-/*let isBracketStructureBalanced;
+/* let isBracketStructureBalanced;
 isBracketStructureBalanced = (symbols) => {
   // проверяем, не является ли строка пустой, если да то возвращаем ошибку
   if (symbols.length !== 1) {
@@ -272,7 +272,7 @@ isBracketStructureBalanced = (symbols) => {
     return stack.length === 0;
   }
   return false;
-};*/
+}; */
 // Big O
 /*
 const getIntersectionOfSortedArrays = (arr1, arr2) => {
@@ -292,9 +292,9 @@ const getIntersectionOfSortedArrays = (arr1, arr2) => {
   }
 
   return result;
-};*/
+}; */
 // Деструктуризация
-/*const getTheNearestLocation = (locations, currentPoint) => {
+/* const getTheNearestLocation = (locations, currentPoint) => {
   if (locations.length === 0) {
     return null;
   }
@@ -313,7 +313,7 @@ const getIntersectionOfSortedArrays = (arr1, arr2) => {
   }
 
   return nearestLocation;
-};*/
+}; */
 // Rest-оператор и деструктуризация
 /*
 const getMax = (coll) => {
@@ -329,7 +329,7 @@ const getMax = (coll) => {
   }
 
   return max;
-};*/
+}; */
 // Spread-оператор и создание новых массивов
 /*
 const flatten = (arrays) => {
@@ -344,4 +344,4 @@ const flatten = (arrays) => {
   }
 
   return result;
-}*/
+} */

@@ -1,19 +1,19 @@
 // Точки на координатной плоскости
-/*const calculateDistance = (point1, point2) => {
+/* const calculateDistance = (point1, point2) => {
   const deltaX = point2[0] - point1[0];
   const deltaY = point2[1] - point1[1];
 
   return Math.sqrt((deltaX ** 2) + (deltaY ** 2));
-};*/
+}; */
 // Семантика массивов
-/*const getMidpoint = (point1, point2) => {
+/* const getMidpoint = (point1, point2) => {
   const x = (point1.x + point2.x) / 2;
   const y = (point1.y + point2.y) / 2;
 
   return { x, y };
-}*/
+} */
 // Создание абстракции
-/*const makeSegment = (beginPoint, endPoint) => {
+/* const makeSegment = (beginPoint, endPoint) => {
   return { beginPoint, endPoint };
 }
 
@@ -32,7 +32,7 @@ const getBeginPoint = (segment) => {
 const getEndPoint = (segment) => {
   let { ...end } = segment.endPoint;
   return end;
-}*/
+} */
 // Интерфейсы
 /*
 const getAngle = (point) => point.angle;
@@ -42,7 +42,7 @@ const getX = (point) => Math.round(getRadius(point) * Math.cos(getAngle(point)))
 const getY = (point) => Math.round(getRadius(point) * Math.sin(getAngle(point)));
 */
 // Уровневое проектирование
-/*const makeRectangle = (point, width, height) => {
+/* const makeRectangle = (point, width, height) => {
   return { point, width, height };
 }
 
@@ -66,9 +66,9 @@ const containsOrigin = (rectangle) => {
   }
 
   return getQuadrant(startPoint) === 2 && getQuadrant(endPoint) === 4;
-}*/
+} */
 // Инварианты
-/*const getGcd = (a, b) => {
+/* const getGcd = (a, b) => {
   if (!b) {
     return a;
   }
@@ -124,4 +124,4 @@ const sub = (rat1, rat2) => {
   return { numer, denom };
 };
 
-const ratToString = (rat) => `${getNumer(rat)}/${getDenom(rat)}`;*/
+const ratToString = (rat) => `${getNumer(rat)}/${getDenom(rat)}`; */

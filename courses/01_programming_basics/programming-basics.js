@@ -1,4 +1,3 @@
-
 /*
 * Основы программирования
 * Функции
@@ -20,7 +19,7 @@ squareSumOfSquares(2, 3); // 169
 
 Подсказки
 Функция square() может быть использована внутри sumOfSquares()
-Функция sumOfSquares() может быть использована внутри squareSumOfSquares()*/
+Функция sumOfSquares() может быть использована внутри squareSumOfSquares() */
 
 // const square = (num) => num ** 2;
 // const sumOfSquares = (a, b) => square(a) + square(b);
@@ -36,9 +35,6 @@ const getSumArea = (n) => getTriangleArea(n, (square(n) / 2)); // sum
 export default getSumArea; // export default module
 */
 
-
-
-
 // const mathTriangleArea = (a, b, y) => {
 //     const degToRad = (deg) => deg * Math.PI / 180;
 //     const area = 1 / 2 * a ** 2 * (Math.sin(degToRad(b)) * Math.sin(degToRad(y))) / Math.sin(degToRad(180 - (b + y)));
@@ -49,10 +45,6 @@ export default getSumArea; // export default module
 
 // const isEven = num => num % 2 === 0;
 // console.log(isEven(17));
-
-
-
-
 
 // const smallestDivisor = (num) => {
 //
@@ -67,7 +59,7 @@ export default getSumArea; // export default module
 //     return acc;
 // }
 
-/*const smallestDivisor = (num) => {
+/* const smallestDivisor = (num) => {
     const iter = (acc) => {
         if (acc > num / 2) {
             return num;
@@ -81,11 +73,7 @@ export default getSumArea; // export default module
     return iter(2);
 }
 
-console.log(smallestDivisor(15));*/
-
-
-
-
+console.log(smallestDivisor(15)); */
 
 // const NOD = (a, b) => {
 //     if (b === 0) {
@@ -98,7 +86,7 @@ console.log(smallestDivisor(15));*/
 // console.log(NOD(6, 3));
 
 // isPrime - функция для нахождения простого натурального числа
-/*const isPrime = (x) => {
+/* const isPrime = (x) => {
     if (x < 2) {
         return false;
     }
@@ -115,7 +103,7 @@ console.log(smallestDivisor(15));*/
     return true;
 };
 
-console.log(isPrime(9));*/
+console.log(isPrime(9)); */
 
 // функция которая считает сумму всех натуральных чисел
 // const sum = (n, a, b) => {
@@ -129,8 +117,6 @@ console.log(isPrime(9));*/
 //
 //     return result;
 // }
-
-
 
 // console.log(9 % 1);
 

@@ -38,4 +38,4 @@ const isHappyTicket = (num) => {
       }
       return firstNum.reduce(reducer) === secondNum.reduce(reducer);
   }
-}*/
+} */
